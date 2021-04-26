@@ -57,7 +57,22 @@ body {
 }
 
 form {
-  padding: 15px 0;
+  padding: 7px 0;
+}
+
+input[type=text] {
+  border: none;
+}
+
+input[type=submit] {
+  width: 5rem;
+  height: 1rem;
+  border: none;
+  background-color: #6c132b;
+  color: #fff;
+  font-family: "Catamaran";
+  border-radius: 3px;
+  font-weight: bolder;
 }
 
 .item {
