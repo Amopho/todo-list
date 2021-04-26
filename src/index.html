@@ -11,18 +11,25 @@
     <div class="sticky-note"></div>
     <div class="notes-container">
       <div class="heading"><h1>To Do's...</h1></div>
-      <div class="task">
         <form>
           <div class="item">
             <input type="text" name="userText" id="userData" /><label
               for="task-{{$index}}"
               ><span></span
             ></label>
-            <button onclick="addToList()">Add</button>
-          </div>
+            <!-- <button onclick="addToList()">Add</button> -->
+            <input type="submit" value="Add" />
         </form>
+        <ul class="result"></ul>
       </div>
-      <div class="count"><h3>0 out of 0 tasks done</h3></div>
+      <div class="messageSwitch">
+      <h3 class="count">
+        <!-- {{completedTasks}} {{taskList.length}}  -->
+        0 out of 0 tasks done
+      </h3>
+      <!-- <h3 class="done" ng-switch-when="done">You're done!</h3> -->
+    </div>
+      <script src="./scripts/index.js"></script>
     </div>
   </body>
 </html>
