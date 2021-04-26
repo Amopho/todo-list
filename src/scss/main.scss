@@ -98,7 +98,8 @@ form {
   }
 }
 
-.count {
+.count,
+.done {
   @extend .heading;
   font-family: $main-font;
   border-top: 3px solid;
