@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "News Cycle";
+  src: url("../fonts/News_Cycle/NewsCycle-Regular.ttf");
+}
+@font-face {
+  font-family: "Catamaran";
+  src: url("../fonts/Catamaran/static/Catamaran-Regular.ttf");
+}
 * {
   box-sizing: border-box;
 }
@@ -16,6 +24,7 @@ body {
 
 .notes-container {
   position: relative;
+  margin-top: 10vh;
   min-width: 30%;
   padding: 2rem;
   border-radius: 5px;
@@ -34,6 +43,37 @@ body {
   border-left: 2px dotted gray;
   border-right: 2px dotted gray;
   transform: rotate(-45deg);
+}
+
+.heading, .count {
+  border-bottom: 3px solid;
+  font-family: "News Cycle";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  color: #181818;
+  font-size: 1rem;
+}
+
+form {
+  padding: 15px 0;
+}
+
+.item {
+  margin: 18px;
+  position: relative;
+}
+.item label {
+  font-family: "Catamaran";
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.count {
+  font-family: "Catamaran";
+  border-top: 3px solid;
+  border-bottom: none;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */
