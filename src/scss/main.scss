@@ -21,7 +21,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: skyblue;
+  background-image: url(../images/desktop-white.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .notes-container {
@@ -29,6 +33,16 @@ body {
   min-width: 45%;
   padding: 1rem;
   border-radius: 5px;
+  box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    darken(#fff, 10%),
+    darken(#fff, 10%) 1px,
+    #fff 1px,
+    #fff 30px
+  );
+
   &::before {
     position: absolute;
     content: "";
@@ -37,9 +51,9 @@ body {
     height: 50px;
     top: 11px;
     left: -43px;
-    background-color: rgba(236, 236, 236, 0.5);
-    border-left: 2px dotted skyblue;
-    border-right: 2px dotted skyblue;
+    background-color: rgba(75, 72, 72, 0.5);
+    border-left: 2px dotted gray;
+    border-right: 2px dotted gray;
     transform: rotate(-45deg);
   }
 }
