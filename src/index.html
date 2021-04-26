@@ -5,7 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO DO list</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="sticky-note"></div>
+    <div class="notes-container">
+      <div class="heading"><h1>To Do's...</h1></div>
+      <hr />
+      <div class="task">
+        <button onclick="create()">create</button>
+        <!-- <form> -->
+        <input type="text" name="userText" id="userData" />
+        <button onclick="addToList()">Add</button>
+        <!-- </form> -->
+        <ul class="result"></ul>
+      </div>
+      <hr />
+      <div class="done-count"><h2>0 out of 0 tasks done</h2></div>
+    </div>
+  </body>
 </html>
