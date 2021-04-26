@@ -45,7 +45,8 @@ body {
   transform: rotate(-45deg);
 }
 
-.heading, .count {
+.heading, .count,
+.done {
   border-bottom: 3px solid;
   font-family: "News Cycle";
   text-transform: uppercase;
@@ -69,7 +70,8 @@ form {
   cursor: pointer;
 }
 
-.count {
+.count,
+.done {
   font-family: "Catamaran";
   border-top: 3px solid;
   border-bottom: none;
