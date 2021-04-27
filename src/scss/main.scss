@@ -87,39 +87,72 @@ form {
   padding: 6px 0;
 }
 
-input[type="text"] {
-  border: none;
-  width: 75%;
-}
-
-input[type="submit"] {
-  width: 3rem;
-  height: 1.2rem;
-  border: none;
-  background-color: #6c132b;
-  color: #fff;
-  font-family: $main-font;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  font-weight: bolder;
-}
-
 .item {
+  border: red 2px dashed;
   margin: 18px;
-  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
 
   label {
     font-family: $main-font;
     font-size: 0.8rem;
     cursor: pointer;
   }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    border: 2px red dashed;
+    width: 50vw;
+    height: 3rem;
+    max-width: 50vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    position: relative;
+  }
+
+  li div {
+    display: flex;
+    flex-direction: row;
+    // right: 0;
+    // top: 0;
+  }
+  li div button {
+    display: flex;
+    width: 1rem;
+    height: 2rem;
+  }
+}
+
+input[type="text"] {
+  border: none;
+  width: 66%;
+  height: 1.2rem;
+}
+
+input[type="submit"] {
+  width: 6rem;
+  height: 1.2rem;
+  border: none;
+  background-color: #6c132b;
+  color: #fff;
+  font-family: $main-font;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
 
 .count,
 .done {
   @extend .heading;
   font-family: $main-font;
+  text-decoration: initial;
+  // font-weight: lighter;
   border-top: 3px solid;
   border-bottom: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
