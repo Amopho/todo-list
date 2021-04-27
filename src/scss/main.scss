@@ -83,17 +83,17 @@ body {
   font-size: 1rem;
 }
 
-form {
-  padding: 6px 0;
-}
-
 .item {
   border: red 2px dashed;
   margin: 18px;
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  form {
+    padding: 6px 0;
+  }
 
   label {
     font-family: $main-font;
@@ -107,12 +107,12 @@ form {
   }
   li {
     border: 2px red dashed;
-    width: 50vw;
+    width: 25vw;
     height: 3rem;
-    max-width: 50vw;
+    max-width: 25vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    position: relative;
+    // position: relative;
   }
 
   li div {
@@ -144,6 +144,11 @@ input[type="submit"] {
   border-radius: 40px;
   font-size: 0.8rem;
   font-weight: bolder;
+}
+
+.completed {
+  /* some fancy styles */
+  text-decoration: line-through;
 }
 
 .count,
