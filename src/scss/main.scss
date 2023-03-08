@@ -28,6 +28,8 @@ $main-font: "Catamaran";
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -84,15 +86,13 @@ body {
 }
 
 .item {
-  border: red 2px dashed;
-  margin: 18px;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: center;
-
   form {
     padding: 6px 0;
+    margin: 18px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 
   label {
@@ -106,20 +106,16 @@ body {
     flex-direction: column;
   }
   li {
-    border: 2px red dashed;
     width: 25vw;
     height: 3rem;
     max-width: 25vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    // position: relative;
   }
 
   li div {
     display: flex;
     flex-direction: row;
-    // right: 0;
-    // top: 0;
   }
   li div button {
     display: flex;
@@ -145,6 +141,8 @@ input[type="submit"] {
   font-size: 0.8rem;
   font-weight: bolder;
 }
+
+// Cross out the item once it's been checked off
 
 .completed {
   /* some fancy styles */
